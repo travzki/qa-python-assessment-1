@@ -35,6 +35,9 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
+from inspect import ArgSpec
+
+
 def one():
 	x = input("enter string1: ")
 	x2 = input("enter string2: ")
@@ -101,6 +104,7 @@ def three(input):
 		count = input.count(i)
 		vowel_count[i] = count
 		return vowel_count
+
 three("hello")
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
@@ -123,15 +127,16 @@ three("hello")
 	# Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 
-# def four(input):
-# 	x = input
-# 	if "cei" in x:
-# 		return True
-# 	if "cie" in x:
-# 		return False
-	
-		
-#     return False
+def four(input):
+	x = input
+	if "cei" in x:
+		return True
+	if "cie" in x:
+		return False
+	if "c" not in x and "ie" in x:
+		return True
+	else:
+		return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -150,16 +155,16 @@ three("hello")
 
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
-# def five(input):
-# 	lst = []
-# 	number = input
-# 	while number > 0:
-# 		number -=1
-# 		lst.append(number)
-# 		if number == 0:
-# 			break
-# 	return sum(lst)
-# print(five(2))
+def five(input):
+	lst = []
+	number = input
+	while number > 0:
+		number -=1
+		lst.append(number)
+		if number == 0:
+			break
+	return sum(lst)
+print(five(2))
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -181,6 +186,7 @@ three("hello")
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
 def six(string, int, char):
+
 	return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
@@ -204,6 +210,9 @@ def six(string, int, char):
 	# Take a look at the documentation for Strings, List and range.
 
 def seven(inputString, char):
+	if char in inputString:
+		count = inputString.count(char)
+		return count
 	return -1
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
@@ -231,7 +240,11 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	return 0
+	y = arg1
+	numbers = y.split
+	numbers = int(numbers)
+	z = sum(numbers)
+	return z
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -258,7 +271,9 @@ def eight(arg1):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
-	return ""
+	input = input.lower()
+	z = input.replace("bert", "")
+	return z.lower()
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
