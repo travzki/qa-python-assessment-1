@@ -35,8 +35,21 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
-def one(input1, input2):
-	return ""
+# def one(input1, input2):
+# 	x = input("enter string1: ")
+# 	x2 = input("enter string2: ")
+
+# 	len1 = len(x)
+# 	len2 = len(x2)
+
+# 	if len1 > len2:
+# 		return len1
+# 	if len2 > len1:
+# 		return len2
+# 	if len1 == len2:
+# 		return len1, len2
+
+# one("hello",  "hi")
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -60,7 +73,16 @@ def one(input1, input2):
 	# No hints for this question
 
 def two(arg1):
-	return "null"
+	x = arg1
+	if x / 3 == 0:
+		return "fizz"
+	elif x / 5 == 0:
+		return "buzz"
+	elif x / 3 and x / 5 == 0:
+		return "fizzbuzz"
+	else:
+		return "null"
+print(two(15))
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -78,8 +100,13 @@ def two(arg1):
 
 	# How do we ignore case in a String? help(str) may offer some insight.
 
-def three(input):
-    return 0
+
+# def three(input):
+# 	vowel_count = {}
+# 	for i in "aeiou":
+# 		count = input.count(i)
+# 		vowel_count[i] = count
+#     	return vowel_count
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -101,8 +128,15 @@ def three(input):
 	# Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 
-def four(input):
-    return False
+# def four(input):
+# 	x = input
+# 	if "cei" in x:
+# 		return True
+# 	if "cie" in x:
+# 		return False
+	
+		
+#     return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
